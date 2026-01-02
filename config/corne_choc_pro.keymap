@@ -48,7 +48,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
 
-        lower_layer {
+        NUMBER {
             display-name = "NUMBER";
 
             // -----------------------------------------------------------------------------------------
@@ -65,7 +65,7 @@
             >;
         };
 
-        raise_layer {
+        SYMBOL {
             display-name = "SYMBOL";
 
             // -----------------------------------------------------------------------------------------
@@ -76,19 +76,19 @@
 
             bindings = <
 &kp TAB    &kp BACKSLASH  &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans     &kp LCTRL  &kp RCTRL  &kp CARET       &kp AMPS      &kp ASTRK  &kp LPAR    &kp RPAR   &kp BSPC
-&kp LCTRL  &kp UNDER      &kp EQUAL  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE  &kp LALT   &kp RALT   &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN   &kp RIGHT   &trans     &kp RIGHT_ALT
+&kp LCTRL  &kp UNDER      &kp EQUAL  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE  &kp LALT   &kp RALT   &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN   &kp RIGHT   &sl 3      &kp RIGHT_ALT
 &kp LSHFT  &kp PIPE       &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE                        &kp EXCL        &kp AT        &kp HASH   &kp DOLLAR  &kp PRCNT  &kp RIGHT_SHIFT
                                      &sk LEFT_GUI          &sk RIGHT_SHIFT        &kp SPACE                        &kp RET         &trans        &trans
             >;
         };
 
-        extra_layer_1 {
+        FUNCTIONS {
             display-name = "EXTRA 1";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_PLAY  &kp C_PAUSE  &kp C_NEXT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans      &trans       &trans      &trans  &trans
+                        &trans  &trans  &trans                  &trans  &trans      &trans
             >;
         };
 
