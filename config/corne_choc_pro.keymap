@@ -58,10 +58,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp LCTRL  &kp RCTRL  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp NUMBER_1  &kp NUMBER_2     &bt NUMBER_3  &bt NUMBER_4  &bt NUMBER_5    &kp LALT   &kp RALT   &kp NUMBER_6  &kp NUMBER_7 &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &trans
-&kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                        &trans    &trans    &trans     &trans     &trans  &trans
-                                          &kp LGUI      &trans        &kp SPACE                             &kp LGUI  &trans    &kp SPACE
+&kp TAB    &kp EXCL      &kp AT           &kp HASH      &kp DLLR      &kp PRCNT       &kp LCTRL  &kp RCTRL  &kp CARET     &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      &kp BSPC
+&kp LCTRL  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp LALT   &kp RALT   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                        &trans        &trans        &trans        &trans        &trans        &trans
+                                          &kp LGUI      &trans        &kp SPACE                             &kp LGUI      &trans        &kp SPACE
             >;
         };
 
@@ -134,6 +134,15 @@
 
         extra_layer_6 {
             display-name = "EXTRA 6";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                  &trans  &trans  &trans
+            >;
+        };
+
+        layer_9 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
