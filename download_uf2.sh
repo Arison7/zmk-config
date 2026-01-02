@@ -3,11 +3,12 @@
 # CONFIG
 RUN_ID=$1                       
 REPO="Arison7/zmk-config"                  # your GitHub repo
-DIR="$./firmware"                  # folder to save UF2s
+DIR="./firmware"                  # folder to save UF2s
 
 
-if [[ ! $RUN_ID]]; then
+if [[ -z "$RUN_ID" ]]; then
     echo "Please provide run id of the action."
+    gh run list
     exit 1
 fi
 
