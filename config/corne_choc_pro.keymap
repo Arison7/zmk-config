@@ -24,7 +24,8 @@
 
             #binding-cells = <2>;
             hold-trigger-key-positions = <42>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <100>;
+            flavor = "balanced";
         };
     };
 
@@ -77,8 +78,8 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp BACKSLASH  &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans     &kp LCTRL  &kp RCTRL  &kp CARET       &kp AMPS        &kp ASTRK     &kp LPAR    &kp RPAR   &kp BSPC
-&kp LCTRL  &kp UNDER      &kp EQUAL  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE  &kp LALT   &kp RALT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &sl 3      &kp RIGHT_ALT
+&kp TAB    &kp BACKSLASH  &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &kp LCTRL  &kp RCTRL  &kp CARET       &kp AMPS        &kp ASTRK     &kp LPAR    &kp RPAR   &kp BSPC
+&kp LCTRL  &kp UNDER      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp LALT   &kp RALT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &sl 3      &kp RIGHT_ALT
 &kp LSHFT  &kp PIPE       &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE                        &kp EXCL        &kp AT          &kp HASH      &kp DOLLAR  &kp PRCNT  &kp RIGHT_SHIFT
                                      &sk LEFT_GUI          &sk RIGHT_SHIFT        &kp SPACE                        &kp RET         &trans          &trans
             >;
