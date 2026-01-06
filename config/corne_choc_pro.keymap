@@ -24,9 +24,8 @@
 
             #binding-cells = <2>;
             hold-trigger-key-positions = <42>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             flavor = "tap-unless-interrupted";
-            retro-tap;
         };
     };
 
