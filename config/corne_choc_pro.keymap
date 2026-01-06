@@ -23,9 +23,9 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <42>;
-            tapping-term-ms = <200>;
-            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <42 43>;
+            tapping-term-ms = <150>;
+            flavor = "hold-preferred";
         };
     };
 
