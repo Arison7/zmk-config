@@ -26,6 +26,7 @@
             hold-trigger-key-positions = <42>;
             tapping-term-ms = <100>;
             flavor = "tap-unless-interrupted";
+            retro-tap;
         };
     };
 
