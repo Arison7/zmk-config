@@ -42,13 +42,11 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E   &kp R   &kp T                        &kp C_MUTE  &kp C_PP  &kp Y                       &kp U   &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D   &kp F   &kp G                        &kp LALT    &kp RALT  &kp H                       &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z  &kp X  &kp C   &kp V   &kp B                                              &kp N                       &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                &trans  &trans  &hold_move_and_tap 1 ESCAPE                        &hold_move_and_tap 2 ENTER  &trans  &trans
+&kp TAB           &kp Q  &kp W  &kp E         &kp R      &kp T                        &none  &none  &kp Y                       &kp U          &kp I          &kp O    &kp P     &kp BSPC
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D         &kp F      &kp G                        &none  &none  &kp H                       &kp J          &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LSHFT         &kp Z  &kp X  &kp C         &kp V      &kp B                                      &kp N                       &kp M          &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
+                                &kp LEFT_GUI  &kp SPACE  &hold_move_and_tap 1 ESCAPE                &hold_move_and_tap 2 ENTER  &kp RIGHT_ALT  &kp RIGHT_GUI
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
 
         NUMBER {
@@ -78,7 +76,7 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp BACKSLASH  &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans        &kp LCTRL  &kp RCTRL  &kp CARET       &kp AMPS        &kp ASTRK     &kp LPAR    &kp RPAR   &kp BSPC
+&kp TAB    &kp BACKSLASH  &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &to 4         &kp LCTRL  &kp RCTRL  &kp CARET       &kp AMPS        &kp ASTRK     &kp LPAR    &kp RPAR   &kp BSPC
 &kp LCTRL  &kp UNDER      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE     &kp LALT   &kp RALT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &sl 3      &kp RIGHT_ALT
 &kp LSHFT  &kp PIPE       &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE                           &kp EXCL        &kp AT          &kp HASH      &kp DOLLAR  &kp PRCNT  &kp RIGHT_SHIFT
                                      &sk LEFT_GUI          &trans                 &kp LEFT_ALT                        &kp RET         &trans          &trans
@@ -96,7 +94,7 @@
         };
 
         extra_layer_2 {
-            display-name = "EXTRA 2";
+            display-name = "Language symbols de";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
