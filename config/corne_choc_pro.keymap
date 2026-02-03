@@ -97,10 +97,17 @@
         Language_symbols_de {
             display-name = "german";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+        /* TAB  Q    W    E    R    T    MUTE PP   Y    U        I    O        P    BSPC */
+          &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DE_UE &trans &kp DE_OE &trans &trans
+
+        /* CTRL A        S        D    F    G    LALT RALT H    J    K    L    ;    ' */
+          &trans &kp DE_AE &kp DE_SS &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+
+        /* SHFT Z    X    C    V    B              N    M    ,    .    /    ESC */
+          &trans &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans &trans
+
+        /*        GUI  LWR  SPC            ENT  RSE  ALT */
+                 &trans &trans &trans      &trans &trans &trans
             >;
         };
 
