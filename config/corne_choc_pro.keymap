@@ -42,10 +42,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R      &kp T                        &kp C_MUTE  &kp C_PP  &kp Y                       &kp U          &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D         &kp F      &kp G                        &kp LALT    &kp RALT  &kp H                       &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z  &kp X  &kp C         &kp V      &kp B                                              &kp N                       &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                &kp LEFT_GUI  &kp SPACE  &hold_move_and_tap 1 ESCAPE                        &hold_move_and_tap 2 ENTER  &kp RIGHT_ALT  &kp RGUI
+&kp TAB           &kp Q  &kp W  &kp E   &kp R   &kp T                        &kp C_MUTE  &kp C_PP  &kp Y                       &kp U   &kp I      &kp O    &kp P     &kp BSPC
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D   &kp F   &kp G                        &kp LALT    &kp RALT  &kp H                       &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT         &kp Z  &kp X  &kp C   &kp V   &kp B                                              &kp N                       &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                                &trans  &trans  &hold_move_and_tap 1 ESCAPE                        &hold_move_and_tap 2 ENTER  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -61,10 +61,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL      &kp AT           &kp HASH      &kp DLLR      &kp PRCNT       &kp LCTRL  &kp RCTRL  &kp CARET            &kp AMPS         &kp ASTRK      &kp LPAR      &kp RPAR      &kp BSPC
-&kp LCTRL  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp LALT   &kp RALT   &kp NUMBER_6         &kp NUMBER_7     &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0  &kp RIGHT_ALT
-&kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                        &sk RA(RIGHT_SHIFT)  &trans           &trans         &trans        &trans        &kp RIGHT_SHIFT
-                                          &trans        &trans        &kp SPACE                             &sk RIGHT_ALT        &sk RIGHT_SHIFT  &sk RIGHT_GUI
+&kp TAB    &kp EXCL      &kp AT           &kp HASH      &kp DLLR      &kp PRCNT       &kp LCTRL  &kp RCTRL  &kp CARET            &kp AMPS       &kp ASTRK     &kp LPAR      &kp RPAR      &kp BSPC
+&kp LCTRL  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp LALT   &kp RALT   &kp NUMBER_6         &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp RIGHT_ALT
+&kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                        &sk RA(RIGHT_SHIFT)  &trans         &trans        &trans        &trans        &kp RIGHT_SHIFT
+                                          &trans        &trans        &trans                                &sk RIGHT_SHIFT      &sk RIGHT_ALT  &sk RMETA
             >;
         };
 
@@ -78,20 +78,20 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp BACKSLASH  &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &kp LCTRL  &kp RCTRL  &kp CARET       &kp AMPS        &kp ASTRK     &kp LPAR    &kp RPAR   &kp BSPC
-&kp LCTRL  &kp UNDER      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp LALT   &kp RALT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &sl 3      &kp RIGHT_ALT
-&kp LSHFT  &kp PIPE       &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE                        &kp EXCL        &kp AT          &kp HASH      &kp DOLLAR  &kp PRCNT  &kp RIGHT_SHIFT
-                                     &sk LEFT_GUI          &sk RIGHT_SHIFT        &kp SPACE                        &kp RET         &trans          &trans
+&kp TAB    &kp BACKSLASH  &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans        &kp LCTRL  &kp RCTRL  &kp CARET       &kp AMPS        &kp ASTRK     &kp LPAR    &kp RPAR   &kp BSPC
+&kp LCTRL  &kp UNDER      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE     &kp LALT   &kp RALT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &sl 3      &kp RIGHT_ALT
+&kp LSHFT  &kp PIPE       &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE                           &kp EXCL        &kp AT          &kp HASH      &kp DOLLAR  &kp PRCNT  &kp RIGHT_SHIFT
+                                     &sk LEFT_GUI          &trans                 &kp LEFT_ALT                        &kp RET         &trans          &trans
             >;
         };
 
         FUNCTIONS {
             display-name = "EXTRA 1";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5      &trans  &trans  &trans          &trans      &trans  &trans      &trans      &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10     &trans  &trans  &kp C_PREVIOUS  &kp C_PLAY  &trans  &kp C_NEXT  &kp K_MUTE  &trans
-&trans  &kp F11  &kp F12  &trans  &trans  &trans                      &trans          &trans      &trans  &trans      &trans      &trans
-                          &trans  &trans  &caps_word                  &trans          &trans      &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5        &trans  &trans  &trans          &trans      &trans  &trans      &trans      &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10       &trans  &trans  &kp C_PREVIOUS  &kp C_PLAY  &trans  &kp C_NEXT  &kp K_MUTE  &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &trans                        &trans          &trans      &trans  &trans      &trans      &trans
+                          &trans  &trans  &kp CAPSLOCK                  &trans          &trans      &trans
             >;
         };
 
