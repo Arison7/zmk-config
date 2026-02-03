@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "keys_de.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -12,17 +11,16 @@
 
 &sl { release-after-ms = <3000>; };
 
-/ {
+{
     chosen { zmk,physical-layout = &default_layout; };
 };
 
-/ {
+{
     behaviors {
         hold_move_and_tap: hold_move_and_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_MOVE_AND_TAP";
             bindings = <&mo>, <&kp>;
-
             #binding-cells = <2>;
             hold-trigger-key-positions = <42 43>;
             tapping-term-ms = <150>;
@@ -43,21 +41,15 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R      &kp T                        &none  &none  &kp Y                       &kp U          &kp I          &kp O    &kp P     &kp BSPC
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D         &kp F      &kp G                        &none  &none  &kp H                       &kp J          &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z  &kp X  &kp C         &kp V      &kp B                                      &kp N                       &kp M          &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
+&kp TAB           &kp Q      &kp W      &kp E      &kp R      &kp T                        &none  &none  &kp Y                       &kp U      &kp I      &kp O      &kp P      &kp BSPC
+&kp LEFT_CONTROL  &kp A      &kp S      &kp D      &kp F      &kp G                        &none  &none  &kp H                       &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
+&kp LSHFT         &kp Z      &kp X      &kp C      &kp V      &kp B                                      &kp N                       &kp M      &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT
                                 &kp LEFT_GUI  &kp SPACE  &hold_move_and_tap 1 ESCAPE                &hold_move_and_tap 2 ENTER  &kp RIGHT_ALT  &kp RIGHT_GUI
             >;
         };
 
         NUMBER {
             display-name = "NUMBER";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL | BT1 | BT2 | BT3 | BT4 | BT5   |  LALT  | RALT  | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT | BTCR| RGB | RST | BOOT| Unlock|        |       |     |     |     |     |     |      |
-            //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
 &kp TAB    &kp EXCL      &kp AT           &kp HASH      &kp DLLR      &kp PRCNT       &kp LCTRL  &kp RCTRL  &kp CARET            &kp AMPS       &kp ASTRK     &kp LPAR      &kp RPAR      &kp BSPC
@@ -69,12 +61,6 @@
 
         SYMBOL {
             display-name = "SYMBOL";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |  LALT | RALT  |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |               |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
 &kp TAB    &kp BACKSLASH  &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &sl 4         &kp LCTRL  &kp RCTRL  &kp CARET       &kp AMPS        &kp ASTRK     &kp LPAR    &kp RPAR   &kp BSPC
@@ -97,17 +83,10 @@
         Language_symbols_de {
             display-name = "german";
             bindings = <
-        /* TAB  Q    W    E    R    T    MUTE PP   Y    U        I    O        P    BSPC */
-          &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DE_UE &trans &kp DE_OE &trans &trans
-
-        /* CTRL A        S        D    F    G    LALT RALT H    J    K    L    ;    ' */
-          &trans &kp DE_AE &kp DE_SS &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-
-        /* SHFT Z    X    C    V    B              N    M    ,    .    /    ESC */
-          &trans &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans &trans
-
-        /*        GUI  LWR  SPC            ENT  RSE  ALT */
-                 &trans &trans &trans      &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &kp U_DE_UE &trans &kp O_DE_OE &trans &trans
+&trans &kp A_DE_AE &kp S_DE_SS &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans &trans
+         &trans &trans &trans      &trans &trans &trans
             >;
         };
 
@@ -161,3 +140,4 @@
         };
     };
 };
+
