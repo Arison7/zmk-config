@@ -11,11 +11,9 @@
 
 &sl { release-after-ms = <3000>; };
 
-{
+ / {
     chosen { zmk,physical-layout = &default_layout; };
-};
 
-{
     behaviors {
         hold_move_and_tap: hold_move_and_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -33,12 +31,6 @@
 
         default_layer {
             display-name = "QWERTY";
-
-            // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |  LALT |  RALT |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |               |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
 &kp TAB           &kp Q      &kp W      &kp E      &kp R      &kp T                        &none  &none  &kp Y                       &kp U      &kp I      &kp O      &kp P      &kp BSPC
@@ -63,81 +55,4 @@
             display-name = "SYMBOL";
 
             bindings = <
-&kp TAB    &kp BACKSLASH  &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &sl 4         &kp LCTRL  &kp RCTRL  &kp CARET       &kp AMPS        &kp ASTRK     &kp LPAR    &kp RPAR   &kp BSPC
-&kp LCTRL  &kp UNDER      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE     &kp LALT   &kp RALT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &sl 3      &kp RIGHT_ALT
-&kp LSHFT  &kp PIPE       &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE                           &kp EXCL        &kp AT          &kp HASH      &kp DOLLAR  &kp PRCNT  &kp RIGHT_SHIFT
-                                     &sk LEFT_GUI          &trans                 &kp LEFT_ALT                        &kp RET         &trans          &trans
-            >;
-        };
-
-        FUNCTIONS {
-            display-name = "FUNC";
-            bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5        &trans  &trans  &trans          &trans      &trans  &trans      &trans      &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10       &trans  &trans  &kp C_PREVIOUS  &kp C_PLAY  &trans  &kp C_NEXT  &kp K_MUTE  &trans
-&trans  &kp F11  &kp F12  &trans  &trans  &trans                        &trans          &trans      &trans  &trans      &trans      &trans
-                          &trans  &trans  &kp CAPSLOCK                  &trans          &trans      &trans
-            >;
-        };
-
-        Language_symbols_de {
-            display-name = "german";
-            bindings = <
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &kp U_DE_UE &trans &kp O_DE_OE &trans &trans
-&trans &kp A_DE_AE &kp S_DE_SS &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans &trans
-         &trans &trans &trans      &trans &trans &trans
-            >;
-        };
-
-        extra_layer_3 {
-            display-name = "EXTRA 3";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_4 {
-            display-name = "EXTRA 4";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_5 {
-            display-name = "EXTRA 5";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_6 {
-            display-name = "EXTRA 6";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        layer_9 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-    };
-};
-
+&kp TAB    &kp BACKSLASH  &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &sl 4
