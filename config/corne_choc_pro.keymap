@@ -62,8 +62,8 @@
             bindings = <
 &kp TAB    &kp EXCL      &kp AT           &kp HASH      &kp DLLR      &kp PRCNT       &kp LCTRL  &kp RCTRL  &kp CARET            &kp AMPS       &kp ASTRK     &kp LPAR      &kp RPAR      &kp BSPC
 &kp LCTRL  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp LALT   &kp RALT   &kp NUMBER_6         &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp RIGHT_ALT
-&kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                        &sk RA(RIGHT_SHIFT)  &trans         &trans        &trans        &trans        &kp RIGHT_SHIFT
-                                          &trans        &trans        &trans                                &sk RIGHT_SHIFT      &sk RIGHT_ALT  &sk RMETA
+&kp LSHFT  &trans        &rgb_ug RGB_TOG  &trans        &trans        &studio_unlock                        &sk RA(RIGHT_SHIFT)  &trans         &trans        &trans        &trans        &kp RIGHT_SHIFT
+                                          &bt BT_PRV    &bt BT_NXT    &trans                                &sk RIGHT_SHIFT      &sk RIGHT_ALT  &sk RMETA
             >;
         };
 
@@ -77,10 +77,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp BACKSLASH  &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &sl 4         &kp LCTRL  &kp RCTRL  &kp CARET       &kp AMPS        &kp ASTRK     &kp LPAR    &kp RPAR   &kp BSPC
+&kp TAB    &kp BACKSLASH  &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans        &kp LCTRL  &kp RCTRL  &kp CARET       &kp AMPS        &kp ASTRK     &kp LPAR    &kp RPAR   &kp BSPC
 &kp LCTRL  &kp UNDER      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE     &kp LALT   &kp RALT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &sl 3      &kp RIGHT_ALT
 &kp LSHFT  &kp PIPE       &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE                           &kp EXCL        &kp AT          &kp HASH      &kp DOLLAR  &kp PRCNT  &kp RIGHT_SHIFT
-                                     &sk LEFT_GUI          &trans                 &kp LEFT_ALT                        &kp RET         &trans          &trans
+                                     &sk LEFT_GUI          &kp SPACE              &kp LEFT_ALT                        &kp RET         &trans          &trans
             >;
         };
 
