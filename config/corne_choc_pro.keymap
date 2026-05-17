@@ -68,10 +68,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans           &trans        &trans        &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0       &trans
-&trans  &kp MINUS     &kp EQUAL     &trans        &trans        &studio_unlock                  &trans           &trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-                                    &bt BT_PRV    &bt BT_NXT    &trans                          &sk RIGHT_SHIFT  &kp SPACE     &sk RMETA
+&trans  &kp PIPE              &kp UNDERSCORE  &kp PLUS      &kp TILDE     &trans          &trans  &trans  &trans           &trans        &trans        &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
+&trans  &kp NUMBER_1          &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0       &trans
+&trans  &kp NON_US_BACKSLASH  &kp MINUS       &kp EQUAL     &kp GRAVE     &studio_unlock                  &trans           &trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+                                              &bt BT_PRV    &bt BT_NXT    &trans                          &sk RIGHT_SHIFT  &kp SPACE     &sk RMETA
             >;
         };
 
